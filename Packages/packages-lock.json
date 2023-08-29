@@ -7,6 +7,13 @@
       "dependencies": {},
       "hash": "b992a061fbf68ff1eb475d0837065b0549ed31ba"
     },
+    "com.deadlyfingers.unitywav": {
+      "version": "https://github.com/mikkoh/UnityWav.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b8b1e6d6288af8dbe20d91f06e8f782af522623c"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
