@@ -12,6 +12,7 @@
   "description": "Use Audio Recorder to Record and Save Audio via Microphone",
   "dependencies": {
     "com.unity.textmeshpro": "3.0.6",
-    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask"
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.deadlyfingers.unitywav": "https://github.com/mikkoh/UnityWav"
   }
 }
