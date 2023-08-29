@@ -1,7 +1,6 @@
 using System.IO;
 using Cysharp.Threading.Tasks;
 using Mayank.AudioRecorder.Utility.Result;
-using UnityEngine;
 
 namespace Mayank.AudioRecorder.Utility
 {
@@ -15,13 +14,9 @@ namespace Mayank.AudioRecorder.Utility
         public static async UniTask<AudioClipFileReadingResultModel> LoadWavFileAsAudioClip(string filePath)
         {
             var audioClipFileReadingResultModel = new AudioClipFileReadingResultModel();
-            // var loadedAudioClip = await LoadAudioFileAsAudioClip(filePath);
-
-            
             await UniTask.Delay(500);
             var fileBytes = await File.ReadAllBytesAsync(filePath);
             var loadedAudioClip = WavUtility.ToAudioClip(fileBytes, 0);
-            
             
             if (loadedAudioClip.length < 0.1f)
             {
@@ -38,12 +33,5 @@ namespace Mayank.AudioRecorder.Utility
 
             return audioClipFileReadingResultModel;
         }
-
-        // public static async UniTask<AudioClip> LoadAudioFileAsAudioClip(string filePath)
-        // {
-        //     await UniTask.Delay(500);
-        //     var fileBytes = await File.ReadAllBytesAsync(filePath);
-        //     return WavUtility.ToAudioClip(fileBytes, 0);
-        // }
     }
 }
